@@ -1,0 +1,12 @@
+<label for="gross">Bruttolön (kr/månad):</label>
+<input type="number" id="gross" placeholder="t.ex. 35000">
+
+<label for="taxRate">Kommunalskatt (%):</label>
+<input type="number" id="taxRate" value="32" step="0.1">
+
+<button onclick="calculateSalary()">Räkna ut nettolön</button>
+
+<div class="result" id="resultBox" style="display:none;">
+    <p>Preliminär skatt: <span id="taxAmount">0</span> kr</p>
+    <p class="net-salary">Lön efter skatt: <span id="netSalary">0</span> kr</p>
+</div>
